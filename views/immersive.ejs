@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Education</title>
+</head>
+<body style="background-image: url('/images/bg_immersive.png'); background-size: cover; background-repeat: no-repeat; ">
+    <div class="fixed-header">
+        <div class="container">
+            <nav style="display: flex;">
+                <a href="#" style="margin-top: 0.7em;"><img src="/images/logo.png" style="width: 10em;" /></a>
+                <a href="#" style="margin-left: auto; margin-top: 1.5em;">Home</a>
+                <a href="#" style="margin-top: 1.5em;" class="chosen">Education</a>
+                <a href="#" style="margin-top: 1.5em;">Resources</a>
+                <a href="#" style="margin-top: 1.5em;">Blogs</a>
+                <a href="#" class="login-btn" style="margin-top: 1.5em;">Login</a>
+                <a href="#" style="margin-top: 1.2em;"><img src="/images/country.png" style="width: 3em;" /></a>
+            </nav>
+        </div>
+    </div>
+    <div class="immersive-content">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between">
+                <button style="color: rgb(0, 106, 0); border-color: rgb(0, 106, 0);" class="immersive-btn">
+                    Main Title Text
+                </button>
+                <button  onclick="immersive()"  style="color: rgb(0, 107, 105); border-color: rgb(0, 107, 105);" class="immersive-btn">
+                    Immersive Education
+                </button>
+                <button onclick="legendary()" style="color: rgb(1, 149, 112); border-color: rgb(1, 149, 112);" class="immersive-btn">
+                    Legendary Trainers
+                </button>
+                <button onclick="unique()" style="color: rgb(0, 142, 0); border-color: rgb(0, 142, 0);" class="immersive-btn">
+                    Unique Live Experiences
+                </button>
+                <button onclick="educational()" style="color: rgb(68, 118, 99); border-color:rgb(68, 118, 99); " class="immersive-btn">
+                    Educational Retreats
+                </button>
+            </div>
+            <div style="display: flex; margin-top: 5em;">
+                <div style="flex: 1">
+                    <h1 class="caption">
+                        OmegaPro’s Education Ecosystem  
+                    </h1>
+                    <p class="description" style="width: 90%;">
+                        OmegaPro designs a customized learning experience for one and all with effective options, value added benefits and one of a kind content in all inclusive environments.
+                    </p>
+                </div>
+                <div style="flex: 1">
+                    <div style="display: flex;">
+                        <div style="width: 165px; color: rgb(0, 107, 105); padding-top: 3em">
+                            Immersive Education
+                        </div>
+                        <div id="immersive" style="width: 100px; height: 100px; border-top: 6px solid rgb(0, 107, 105); border-left: 6px solid rgb(0, 107, 105); border-top-left-radius: 100%;"></div>
+                        <div id="legendary" style="width: 100px; height: 100px; border-top: 6px solid rgb(1, 149, 112); border-right: 6px solid rgb(1, 149, 112); margin-right: 20px; border-top-right-radius: 100%;"></div>
+                        <div style="color: rgb(1, 149, 112);  padding-top: 3em">
+                            Legendary Trainers
+                        </div>
+                    </div>
+                    <div style="display: flex;">
+                        <div style="width: 165px; color: rgb(0, 142, 0); padding-top: 3em;">
+                            Unique Live Experiences
+                        </div>
+                        <div id="unique" style="width: 100px; height: 100px; border-bottom: 6px solid rgb(0, 142, 0); border-left: 6px solid rgb(0, 142, 0); border-bottom-left-radius: 100%;"></div>
+                        <div id="educational" style="width: 100px; height: 100px; border-bottom: 6px solid rgb(68, 118, 99); border-right: 6px solid rgb(68, 118, 99); margin-right: 20px; border-bottom-right-radius: 100%;"></div>
+                        <div style="color: rgb(68, 118, 99); padding-top: 3em">
+                            Educational Retreats
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function immersive() {
+            document.getElementById("immersive").classList.add('grey');
+            document.getElementById("legendary").classList.add('grey');
+            document.getElementById("unique").classList.add('grey');
+            document.getElementById("educational").classList.add('grey');
+            document.getElementById("immersive").classList.remove('grey');
+        }
+        function legendary() {
+            document.getElementById("immersive").classList.add('grey');
+            document.getElementById("legendary").classList.add('grey');
+            document.getElementById("unique").classList.add('grey');
+            document.getElementById("educational").classList.add('grey');
+            document.getElementById("legendary").classList.remove('grey');
+        }
+        function unique() {
+            document.getElementById("immersive").classList.add('grey');
+            document.getElementById("legendary").classList.add('grey');
+            document.getElementById("unique").classList.add('grey');
+            document.getElementById("educational").classList.add('grey');
+            document.getElementById("unique").classList.remove('grey');
+        }
+        function educational() {
+            document.getElementById("immersive").classList.add('grey');
+            document.getElementById("legendary").classList.add('grey');
+            document.getElementById("unique").classList.add('grey');
+            document.getElementById("educational").classList.add('grey');
+            document.getElementById("educational").classList.remove('grey');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Monsterrat';
+    src: URL('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Monsterrat-bold';
+    src: URL('../fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Monsterrat-extra-bold';
+    src: URL('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+}
+
+.fixed-header {
+    width: 100%;
+    position: fixed;        
+    height: 5em;
+    left: 0;
+    top: 0;
+    border-bottom: 2px solid #4bb07c;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    padding: 7px 25px;
+    display: inline-block;
+    font-family: 'Monsterrat';
+}
+nav .chosen {
+    color: #4bb07c;
+    font-family: 'Monsterrat-bold';
+}
+
+.login-btn {
+    background-color: #4bb07c;
+    height: 20px;
+    border-radius: 10px;
+    color: white;
+    margin-left: 4em;
+}
+
+.typewrite {
+    color: #4bb07c;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.caption {
+    font-family: 'Monsterrat-extra-bold';
+}
+
+.description {
+    font-family: 'Monsterrat';
+    width: 41%;
+    text-align: left;
+    font-size: 14px;
+}
+
+.moto {
+    font-family: 'Monsterrat';
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.mission {
+    margin-top: 3em;
+    font-family: 'Monsterrat-bold';
+    font-size: 24px;
+}
+
+.immersive-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.immersive-btn {
+    text-transform: uppercase;
+    border: none;
+    border-bottom: 6px solid;
+    background-color: transparent;
+    padding-bottom: 0.8em;
+    margin: 2px;
+    font-family: 'Monsterrat';
+    font-size: 14px;
+}
+
+.immersive-btn:focus {
+    color: grey !important;
+    border-bottom-color: grey !important;
+}
+
+.grey {
+    border-color: grey !important;
+}
+
+@media all and (max-width: 750px) {
+    .description {
+        width: auto;
+    }
+}
