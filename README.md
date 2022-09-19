@@ -2,7 +2,6 @@
 MegaPro application
 
 ## Clone the repo
-git clone https://github.com/ahmedraufofficial/NodeJsCrudApp.git
 
 ## Go to cloned repo directory
 1) open terminal
